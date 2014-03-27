@@ -18,7 +18,13 @@ class DbHandler {
         $db = new DbConnect();
         $this->conn = $db->connect();
     }
- 
+	
+	// destructor
+    function __destruct() {
+         
+    }
+	
+	
     /* ------------- `users` table method ------------------ */
  
     /**
@@ -62,6 +68,8 @@ class DbHandler {
  
         return $response;
     }
+ 
+ 
  
     /**
      * Checking user login
@@ -118,6 +126,7 @@ class DbHandler {
         $stmt->close();
         return $num_rows > 0;
     }
+ 
  
     /**
      * Fetching user by email
@@ -189,6 +198,8 @@ class DbHandler {
     private function generateApiKey() {
         return md5(uniqid(rand(), true));
     }
+ 
+ 
  
     /* ------------- `tasks` table method ------------------ */
  
@@ -294,17 +305,16 @@ class DbHandler {
     }
  
 }
-/*
-//$conn = @mysql_connect("sql113.byethost15.com","b15_14447457","qwertyui1");
-$conn = @mysql_connect("localhost","root","123456");
-if (!$conn){
-    die("Á¬½ÓÊý¾Ý¿âÊ§°Ü£º" . mysql_error());
-}
-mysql_select_db("webgame", $conn);
-//×Ö·û×ª»»£¬¶Á¿â
-mysql_query("set character set 'gbk'");
-//Ð´¿â
-mysql_query("set names 'gbk'");
-
-*/
+	/*
+	//$conn = @mysql_connect("sql113.byethost15.com","b15_14447457","qwertyui1");
+	$conn = @mysql_connect("localhost","root","123456");
+	if (!$conn){
+		die("Á¬½ÓÊý¾Ý¿âÊ§°Ü£º" . mysql_error());
+	}
+	mysql_select_db("webgame", $conn);
+	//×Ö·û×ª»»£¬¶Á¿â
+	mysql_query("set character set 'gbk'");
+	//Ð´¿â
+	mysql_query("set names 'gbk'");
+	*/
 ?>
