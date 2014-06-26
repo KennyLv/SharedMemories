@@ -6,11 +6,16 @@
 
 ####Backend:
 - Design database ( account/game/release status)
-- Create Restful API
+- Create Restful API (account mange/game manage/game download/game rank/user score)
 - Add ranking/comment system
+- Add score API that can used for more game
 
 ####Front:
 - Add account manage (Player/Developer)
-- Add game manage (add/update/release/close)
+- Add game manage (add/update/release/close, detail/comments/ranking)
 - Add tools - sandbox ...
-- Add Ranking 
+- Add game Ranking (like/dislike)
+- Add Score page
+- 
+
+
