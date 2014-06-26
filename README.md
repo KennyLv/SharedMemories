@@ -5,9 +5,9 @@
 ##TODO:
 
 ####Backend:
---1, Design database ( account/game/release status)
---2, Create Restful API
---3, Add ranking/comment system
+- 1, Design database ( account/game/release status)
+- 2, Create Restful API
+- 3, Add ranking/comment system
 
 ####Front:
 --1, Add account manage (Player/Developer)
