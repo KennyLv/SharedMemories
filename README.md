@@ -7,6 +7,8 @@
 ####Backend:
 - Design database ( account/game/release status)
 - Create Restful API (account mange/game manage/game download/game rank/user score)
+- Add developer token
+- release the min.js for developer use their token to refer the embeded API
 - Add ranking/comment system
 - Add score API that can used for more game
 
