@@ -15,7 +15,7 @@
 - Add game manage (add/update/release/close, detail/comments/ranking)
 - Add tools - sandbox ...
 - Add game Ranking (like/dislike)
-- Add Score page
+- Add Score page (if the user had only one game out of 10, then his one score can only be 0.1)
 - 
 
 
